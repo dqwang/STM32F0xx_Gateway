@@ -3409,6 +3409,7 @@
                     <state>$PROJ_DIR$\..\..\..\Libraries\CMSIS\Device\ST\STM32F0xx\Include</state>
                     <state>$PROJ_DIR$\..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc</state>
                     <state>$PROJ_DIR$\..\..\..\Libraries\STM32F0xx_CPAL_Driver\inc</state>
+                    <state>$PROJ_DIR$\..\..\..\HAL</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -5157,6 +5158,27 @@
         </file>
         <file>
             <name>$PROJ_DIR$\..\..\..\USER\system_stm32f0xx.c</name>
+        </file>
+    </group>
+    <group>
+        <name>HAL</name>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\HAL\hal_common.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\HAL\hal_gpio.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\HAL\hal_led.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\HAL\hal_sysclock.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\HAL\hal_systick.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\HAL\hal_ut.c</name>
         </file>
     </group>
     <group>

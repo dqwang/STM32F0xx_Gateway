@@ -29,6 +29,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f0xx_it.h"
+#include "hal_common.h"
 
 /** @addtogroup Template_Project
   * @{
@@ -92,6 +93,10 @@ void PendSV_Handler(void)
   */
 void SysTick_Handler(void)
 {
+	hal_systick_thread();
+	
+	hal_led_err_thread();
+	hal_led_run_thread();
 }
 
 /******************************************************************************/

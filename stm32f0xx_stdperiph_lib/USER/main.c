@@ -27,6 +27,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "hal_common.h"
 
 /** @addtogroup STM32F0xx_StdPeriph_Templates
   * @{
@@ -47,21 +48,29 @@
 int main(void)
 {
 
-  /*!< At this stage the microcontroller clock setting is already configured, 
-       this is done through SystemInit() function which is called from startup
-       file (startup_stm32f0xx.s) before to branch to application main.
-       To reconfigure the default setting of SystemInit() function, refer to
-       system_stm32f0xx.c file
-     */ 
-      
-  /* Add your application code here
-     */
+	/*!< At this stage the microcontroller clock setting is already configured, 
+	   this is done through SystemInit() function which is called from startup
+	   file (startup_stm32f0xx.s) before to branch to application main.
+	   To reconfigure the default setting of SystemInit() function, refer to
+	   system_stm32f0xx.c file
+	 */ 
+	  
+	/* Add your application code here
+	 */
+	hal_init();
+	
 
-  /* Infinite loop */
-  while (1)
-  {
+#if 1//UT
+	hal_ut_led();
+#else
+	
+#endif
 
-  }
+	/* Infinite loop */
+	while (1)
+	{
+
+	}
 }
 
 

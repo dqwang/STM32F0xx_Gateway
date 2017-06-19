@@ -2,7 +2,7 @@
 
 "D:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\bin\armstlink2.dll" 
 
-"D:\01_MiladuoSoft\github\backup-STM32F0xx_Gateway\stm32f0xx_stdperiph_lib\Project\STM32F0xx_StdPeriph_Templates\EWARM\STM32F030\Exe\Project.out" 
+"D:\01_MiladuoSoft\github\STM32F0xx_Gateway\stm32f0xx_stdperiph_lib\Project\STM32F0xx_StdPeriph_Templates\EWARM\STM32F030\Exe\Project.out" 
 
 --plugin "D:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\bin\armbat.dll" 
 
