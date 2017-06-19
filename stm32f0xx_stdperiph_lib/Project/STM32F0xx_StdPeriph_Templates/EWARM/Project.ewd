@@ -4265,7 +4265,7 @@
                 </option>
                 <option>
                     <name>MemFile</name>
-                    <state>$TOOLKIT_DIR$\CONFIG\debugger\ST\STM32F030R8.ddf</state>
+                    <state>$TOOLKIT_DIR$\CONFIG\debugger\ST\STM32F030C8.ddf</state>
                 </option>
                 <option>
                     <name>RunToEnable</name>
@@ -4313,7 +4313,7 @@
                 </option>
                 <option>
                     <name>UseFlashLoader</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>CLowLevel</name>

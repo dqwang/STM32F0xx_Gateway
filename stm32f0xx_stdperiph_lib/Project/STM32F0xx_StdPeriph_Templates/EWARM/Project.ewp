@@ -3279,7 +3279,7 @@
                 <option>
                     <name>CCDefines</name>
                     <state>USE_STDPERIPH_DRIVER</state>
-                    <state>STM32F031</state>
+                    <state>STM32F030</state>
                     <state>USE_DEFAULT_TIMEOUT_CALLBACK</state>
                 </option>
                 <option>
@@ -3704,7 +3704,7 @@
                 </option>
                 <option>
                     <name>OOCOutputFile</name>
-                    <state>STM32F0XX_LD.hex</state>
+                    <state>STM32F030C8_Gateway.hex</state>
                 </option>
                 <option>
                     <name>OOCCommandLineProducer</name>

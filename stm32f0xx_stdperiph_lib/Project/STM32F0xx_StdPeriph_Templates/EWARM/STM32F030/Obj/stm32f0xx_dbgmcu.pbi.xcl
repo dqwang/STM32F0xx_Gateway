@@ -1,14 +1,14 @@
-"D:\01_MiladuoSoft\github\STM32F0xx_Gateway\stm32f0xx_stdperiph_lib\Libraries\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_dbgmcu.c"
+"D:\01_MiladuoSoft\github\backup-STM32F0xx_Gateway\stm32f0xx_stdperiph_lib\Libraries\STM32F0xx_StdPeriph_Driver\src\stm32f0xx_dbgmcu.c"
 -std=c11
 -ferror-limit=0
 -I
-D:\01_MiladuoSoft\github\STM32F0xx_Gateway\stm32f0xx_stdperiph_lib\Project\STM32F0xx_StdPeriph_Templates\EWARM\..
+D:\01_MiladuoSoft\github\backup-STM32F0xx_Gateway\stm32f0xx_stdperiph_lib\Project\STM32F0xx_StdPeriph_Templates\EWARM\..
 -I
-D:\01_MiladuoSoft\github\STM32F0xx_Gateway\stm32f0xx_stdperiph_lib\Project\STM32F0xx_StdPeriph_Templates\EWARM\..\..\..\Libraries\CMSIS\Device\ST\STM32F0xx\Include
+D:\01_MiladuoSoft\github\backup-STM32F0xx_Gateway\stm32f0xx_stdperiph_lib\Project\STM32F0xx_StdPeriph_Templates\EWARM\..\..\..\Libraries\CMSIS\Device\ST\STM32F0xx\Include
 -I
-D:\01_MiladuoSoft\github\STM32F0xx_Gateway\stm32f0xx_stdperiph_lib\Project\STM32F0xx_StdPeriph_Templates\EWARM\..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc
+D:\01_MiladuoSoft\github\backup-STM32F0xx_Gateway\stm32f0xx_stdperiph_lib\Project\STM32F0xx_StdPeriph_Templates\EWARM\..\..\..\Libraries\STM32F0xx_StdPeriph_Driver\inc
 -I
-D:\01_MiladuoSoft\github\STM32F0xx_Gateway\stm32f0xx_stdperiph_lib\Project\STM32F0xx_StdPeriph_Templates\EWARM\..\..\..\Libraries\STM32F0xx_CPAL_Driver\inc
+D:\01_MiladuoSoft\github\backup-STM32F0xx_Gateway\stm32f0xx_stdperiph_lib\Project\STM32F0xx_StdPeriph_Templates\EWARM\..\..\..\Libraries\STM32F0xx_CPAL_Driver\inc
 -I
 D:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\CMSIS\Include
 -I
@@ -16,13 +16,13 @@ D:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\inc
 -I
 D:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\inc\c
 -I
-D:\01_MiladuoSoft\github\STM32F0xx_Gateway\stm32f0xx_stdperiph_lib\Project\STM32F0xx_StdPeriph_Templates
+D:\01_MiladuoSoft\github\backup-STM32F0xx_Gateway\stm32f0xx_stdperiph_lib\Project\STM32F0xx_StdPeriph_Templates
 -I
-D:\01_MiladuoSoft\github\STM32F0xx_Gateway\stm32f0xx_stdperiph_lib\Libraries\CMSIS\Device\ST\STM32F0xx\Include
+D:\01_MiladuoSoft\github\backup-STM32F0xx_Gateway\stm32f0xx_stdperiph_lib\Libraries\CMSIS\Device\ST\STM32F0xx\Include
 -I
-D:\01_MiladuoSoft\github\STM32F0xx_Gateway\stm32f0xx_stdperiph_lib\Libraries\STM32F0xx_StdPeriph_Driver\inc
+D:\01_MiladuoSoft\github\backup-STM32F0xx_Gateway\stm32f0xx_stdperiph_lib\Libraries\STM32F0xx_StdPeriph_Driver\inc
 -I
-D:\01_MiladuoSoft\github\STM32F0xx_Gateway\stm32f0xx_stdperiph_lib\Libraries\STM32F0xx_CPAL_Driver\inc
+D:\01_MiladuoSoft\github\backup-STM32F0xx_Gateway\stm32f0xx_stdperiph_lib\Libraries\STM32F0xx_CPAL_Driver\inc
 -I
 D:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\CMSIS\Include
 -D__CHAR_BITS__=8
@@ -267,7 +267,7 @@ D:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\CMSIS\Include
 -D__EDG_FLOAT80_ENABLING_POSSIBLE=0
 -D__EDG_FLOAT128_ENABLING_POSSIBLE=0
 -DUSE_STDPERIPH_DRIVER=1
--DSTM32F031=1
+-DSTM32F030=1
 -DUSE_DEFAULT_TIMEOUT_CALLBACK=1
 -D_DLIB_CONFIG_FILE_HEADER_NAME=u8"D:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.0\\arm\\INC\\c\\DLib_Config_Full.h"
 -D_DLIB_CONFIG_FILE_STRING=u8"D:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.0\\arm\\INC\\c\\DLib_Config_Full.h"
