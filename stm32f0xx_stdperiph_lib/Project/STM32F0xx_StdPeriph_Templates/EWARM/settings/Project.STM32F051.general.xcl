@@ -1,0 +1,15 @@
+"D:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\bin\armproc.dll" 
+
+"D:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\bin\armstlink2.dll" 
+
+"C:\ProgramData\IARSystems\EmbeddedWorkbench\DownloadedExamples\arm\8.11.2\ST\STM32F0xx\stm32f0xx_stdperiph_lib\Project\STM32F0xx_StdPeriph_Templates\EWARM\STM32F051\Exe\Project.out" 
+
+--plugin "D:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\bin\armbat.dll" 
+
+--device_macro "D:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\config\debugger\ST\STM32F0xx.dmac" 
+
+--flash_loader "D:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\config\flashloader\ST\FlashSTM32F05xx8.board" 
+
+
+
+
