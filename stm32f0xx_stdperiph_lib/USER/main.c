@@ -45,6 +45,7 @@
   * @param  None
   * @retval None
   */
+
 int main(void)
 {
 
@@ -59,9 +60,17 @@ int main(void)
 	 */
 	hal_init();
 	
-
+	hal_systick_delay(100);//system poweron,for gprs
+	
 #if 1//UT
-	hal_ut_led();
+	//hal_ut_led();
+	//hal_ut_beep();
+	//hal_ut_uart2_send();
+	
+	while(1){
+		//hal_ut_uart2_echo();
+		//hal_ut_gprs();
+	}
 #else
 	
 #endif

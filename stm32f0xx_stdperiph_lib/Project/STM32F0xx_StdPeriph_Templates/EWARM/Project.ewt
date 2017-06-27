@@ -5808,10 +5808,16 @@
     <group>
         <name>HAL</name>
         <file>
+            <name>$PROJ_DIR$\..\..\..\HAL\hal_beep.c</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\..\..\..\HAL\hal_common.c</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\..\..\HAL\hal_gpio.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\HAL\hal_gprs.c</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\..\..\HAL\hal_led.c</name>
@@ -5821,6 +5827,9 @@
         </file>
         <file>
             <name>$PROJ_DIR$\..\..\..\HAL\hal_systick.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\HAL\hal_uart.c</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\..\..\HAL\hal_ut.c</name>

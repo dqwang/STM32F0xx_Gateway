@@ -1,0 +1,20 @@
+#ifndef __HAL_ERROR_H__
+#define __HAL_ERROR_H__
+
+typedef enum ERRNO{
+	E_QUEUE_EMPTY = -2,
+	E_QUEUE_FULL = -1,
+	EOK = 0,
+	E_INVALID_PACKET,
+	E_NULL_POINTER,
+	E_INVALID_HEADER,
+	E_INVALID_CMD,
+	E_INVALID_CRC,
+	E_ICCARD_SPI_ERROR,
+	E_ICCARD_READ_ERROR,
+	E_NOT_HEARTBEAT_CMD,
+}errno_t;
+
+
+#endif/*__HAL_ERROR_H__*/
+

@@ -97,7 +97,69 @@ void SysTick_Handler(void)
 	
 	hal_led_err_thread();
 	hal_led_run_thread();
+	hal_beep_thread();
 }
+
+
+void USART1_IRQHandler(void)
+{
+	if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET){
+		/* Read one byte from the receive data register */
+		hal_uart1.rbuf[hal_uart1.rindex++] = USART_ReceiveData(USART1);
+
+		if(hal_uart1.rindex == UART_RBUF_SIZE){		
+			hal_uart1.rindex =0;			
+		}
+
+		hal_uart1.rflag = 1;
+	}
+
+	if(USART_GetITStatus(USART1, USART_IT_TXE) != RESET){   
+		if (hal_uart1.slen == 0){
+			return;
+		}
+		/* Write one byte to the transmit data register */
+		USART_SendData(USART1, hal_uart1.sbuf[hal_uart1.sindex++]);
+
+		if (hal_uart1.sindex >= hal_uart1.slen) {
+			/* Disable the USART Transmit interrupt */
+			USART_ITConfig(USART1, USART_IT_TXE, DISABLE);
+			hal_uart1.slen=0;
+		}
+	}	
+}
+
+
+
+//Firstly, clear the inputrupt flag!!!
+void USART2_IRQHandler(void)
+{
+	if(USART_GetITStatus(USART2, USART_IT_RXNE) != RESET){
+		/* Read one byte from the receive data register */
+		hal_uart2.rbuf[hal_uart2.rindex++] = USART_ReceiveData(USART2);
+
+		if(hal_uart2.rindex == UART_RBUF_SIZE){		
+			hal_uart2.rindex =0;			
+		}
+
+		hal_uart2.rflag = 1;
+	}
+
+	if(USART_GetITStatus(USART2, USART_IT_TXE) != RESET){   
+		if (hal_uart2.slen == 0){
+			return;
+		}
+		/* Write one byte to the transmit data register */
+		USART_SendData(USART2, hal_uart2.sbuf[hal_uart2.sindex++]);
+
+		if (hal_uart2.sindex >= hal_uart2.slen) {
+			/* Disable the USART Transmit interrupt */
+			USART_ITConfig(USART2, USART_IT_TXE, DISABLE);
+			hal_uart2.slen=0;
+		}
+	}	
+}
+
 
 /******************************************************************************/
 /*                 STM32F0xx Peripherals Interrupt Handlers                   */

@@ -3341,7 +3341,7 @@
                 <option>
                     <name>CCAllowList</name>
                     <version>1</version>
-                    <state>11111110</state>
+                    <state>00000000</state>
                 </option>
                 <option>
                     <name>CCDebugInfo</name>
@@ -3425,7 +3425,7 @@
                 </option>
                 <option>
                     <name>CCOptLevel</name>
-                    <state>3</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>CCOptStrategy</name>
@@ -3434,7 +3434,7 @@
                 </option>
                 <option>
                     <name>CCOptLevelSlave</name>
-                    <state>3</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>CompilerMisraRules98</name>
@@ -5163,10 +5163,16 @@
     <group>
         <name>HAL</name>
         <file>
+            <name>$PROJ_DIR$\..\..\..\HAL\hal_beep.c</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\..\..\..\HAL\hal_common.c</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\..\..\HAL\hal_gpio.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\HAL\hal_gprs.c</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\..\..\HAL\hal_led.c</name>
@@ -5176,6 +5182,9 @@
         </file>
         <file>
             <name>$PROJ_DIR$\..\..\..\HAL\hal_systick.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\..\..\HAL\hal_uart.c</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\..\..\HAL\hal_ut.c</name>
