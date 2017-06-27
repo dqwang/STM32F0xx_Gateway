@@ -1,8 +1,8 @@
 ;******************** (C) COPYRIGHT 2014 STMicroelectronics ********************
 ;* File Name          : startup_stm32f030.s
 ;* Author             : MCD Application Team
-;* Version            : V1.3.1
-;* Date               : 17-January-2014 
+;* Version            : V1.5.0
+;* Date               : 24-December-2014 
 ;* Description        : STM32F030 devices vector table for EWARM toolchain.
 ;*                      This module performs:
 ;*                      - Set the initial SP
@@ -54,8 +54,6 @@
 
         SECTION .intvec:CODE:NOROOT(2)
 
-        EXTERN  __ICFEDIT_region_RAM_start__
-        EXTERN  __ICFEDIT_region_RAM_end__
         EXTERN  __iar_program_start
         EXTERN  SystemInit
         PUBLIC  __vector_table
@@ -118,17 +116,31 @@ __vector_table
         THUMB
 
         PUBWEAK Reset_Handler
-        SECTION .text:CODE:REORDER:NOROOT(2)
+        SECTION .text:CODE:NOROOT:REORDER(2)
 Reset_Handler
-        LDR     R0, =__ICFEDIT_region_RAM_start__
-        LDR     R1, =__ICFEDIT_region_RAM_end__
-        MOVS    R2,#0
-RAM_Init
-        STR     R2,[R0,#0]
-        ADDS    R0,R0,#4
-        CMP     R0,R1
-        BCC     RAM_Init
 
+        LDR     R0, =sfe(CSTACK)          ; set stack pointer 
+        MSR     MSP, R0 
+
+;;Check if boot space corresponds to test memory 
+        LDR R0,=0x00000004
+        LDR R1, [R0]
+        LSRS R1, R1, #24
+        LDR R2,=0x1F
+        CMP R1, R2
+        
+        BNE ApplicationStart       
+;; SYSCFG clock enable         
+        LDR R0,=0x40021018 
+        LDR R1,=0x00000001
+        STR R1, [R0]
+        
+;; Set CFGR1 register with flash memory remap at address 0
+
+        LDR R0,=0x40010000 
+        LDR R1,=0x00000000
+        STR R1, [R0]
+ApplicationStart
         LDR     R0, =SystemInit
         BLX     R0
         LDR     R0, =__iar_program_start
